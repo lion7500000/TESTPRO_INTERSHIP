@@ -16,3 +16,5 @@ def verify_search_text_in(context, text):
 @then ('Verify search Artist {text}')
 def verify_serch_text_not_found(context, text):
     context.app.search_page.verify_artist_in_text(text)
+
+

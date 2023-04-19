@@ -44,6 +44,10 @@ class Page:
     def wait_for_element_appear(self,*locator):
         self.driver.wait.until(EC.presence_of_element_located(locator))
 
+    # def hover_mouse_to(self, *locator):
+    #     sale_button = self.find_element(locator)
+    #     self.actions.move_to_element(sale_button).click().perform()
+
     def open_page(self, url=''):
         #logger.info(f'Opening page {self.base_url + url}')
         self.driver.get(self.base_url + url)
